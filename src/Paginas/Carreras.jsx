@@ -1,0 +1,65 @@
+import React from 'react'
+
+const Carreras = () => {
+    return (
+        <div>
+            <form action="#" id="carreras">
+                <label for="lang">Selecciona tu Carrera</label>
+                <select name="carreras" id="lang">
+                    <option value="BACHILLERATO GENERAL POR COMPETENCIAS">BACHILLERATO GENERAL POR COMPETENCIAS</option>
+                    <option value="BACHILLERATO INTENSIVO SEMIESCOLARIZADO">BACHILLERATO INTENSIVO SEMIESCOLARIZADO</option>
+                    <option value="CARRERA DE ABOGADO">CARRERA DE ABOGADO</option>
+                    <option value="LICENCIATURA EN ADMINISTRACIÓN">LICENCIATURA EN ADMINISTRACIÓN</option>
+                    <option value="LICENCIATURA EN ADMINISTRACIÓN Y LIDERAZGO EMPRESARIAL 7x2">LICENCIATURA EN ADMINISTRACIÓN Y LIDERAZGO EMPRESARIAL 7x2</option>
+                    <option value="LICENCIATURA EN ARQUITECTURA">LICENCIATURA EN ARQUITECTURA</option>
+                    <option value="LICENCIATURA EN ARQUITECTURA 7x2">LICENCIATURA EN ARQUITECTURA 7x2</option>
+                    <option value="LICENCIATURA EN CIENCIAS FORENSES: CRIMINALISTICA Y CRIMINOLOGIA">LICENCIATURA EN CIENCIAS FORENSES: CRIMINALISTICA Y CRIMINOLOGIA</option>
+                    <option value="LICENCIATURA EN CIRUJANO DENTISTA">LICENCIATURA EN CIRUJANO DENTISTA</option>
+                    <option value="LICENCIATURA EN CONTADURÍA 7x2">LICENCIATURA EN CONTADURÍA 7x2</option>
+                    <option value="LICENCIATURA EN CONTADURÍA PÚBLICA">LICENCIATURA EN CONTADURÍA PÚBLICA</option>
+                    <option value="LICENCIATURA EN CULTURA FÍSICA Y DEPORTES">LICENCIATURA EN CULTURA FÍSICA Y DEPORTES</option>
+                    <option value="LICENCIATURA EN DERECHO">LICENCIATURA EN DERECHO</option>
+                    <option value="LICENCIATURA EN DERECHO 7x2">LICENCIATURA EN DERECHO 7x2</option>
+                    <option value="LICENCIATURA EN DISEÑO DE ANIMACIÓN 7x2">LICENCIATURA EN DISEÑO DE ANIMACIÓN 7x2</option>
+                    <option value="LICENCIATURA EN DISEÑO DE INTERIORES Y AMBIENTACIÓN">LICENCIATURA EN DISEÑO DE INTERIORES Y AMBIENTACIÓN</option>
+                    <option value="LICENCIATURA EN DISEÑO DE MODAS">LICENCIATURA EN DISEÑO DE MODAS</option>
+                    <option value="LICENCIATURA EN DISEÑO PARA LA COMUNICACIÓN GRÁFICA">LICENCIATURA EN DISEÑO PARA LA COMUNICACIÓN GRÁFICA</option>
+                    <option value="LICENCIATURA EN ENFERMERÍA">LICENCIATURA EN ENFERMERÍA</option>
+                    <option value="LICENCIATURA EN ENFERMERÍA INTERNACIONAL">LICENCIATURA EN ENFERMERÍA INTERNACIONAL</option>
+                    <option value="LICENCIATURA EN GASTRONOMÍA">LICENCIATURA EN GASTRONOMÍA</option>
+                    <option value="LICENCIATURA EN GASTRONOMÍA Y GESTIÓN RESTAURANTERA">LICENCIATURA EN GASTRONOMÍA Y GESTIÓN RESTAURANTERA</option>
+                    <option value="LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS - ZAPOPAN">LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS - ZAPOPAN</option>
+                    <option value="LICENCIATURA EN INGENIERIA CIVIL">LICENCIATURA EN INGENIERIA CIVIL</option>
+                    <option value="LICENCIATURA EN INGENIERIA EN COMPUTACIÓN">LICENCIATURA EN INGENIERIA EN COMPUTACIÓN</option>
+                    <option value="LICENCIATURA EN INGENIERÍA EN COMPUTACION SEP">LICENCIATURA EN INGENIERÍA EN COMPUTACION SEP</option>
+                    <option value="LICENCIATURA EN INGENIERIA EN COMUNICACIONES Y ELECTRONICA">LICENCIATURA EN INGENIERIA EN COMUNICACIONES Y ELECTRONICA</option>
+                    <option value="LICENCIATURA EN INGENIERÍA EN DESARROLLO DE SOFTWARE 7x2">LICENCIATURA EN INGENIERÍA EN DESARROLLO DE SOFTWARE 7x2</option>
+                    <option value="LICENCIATURA EN INGENIERÍA EN MECATRÓNICA 7x2">LICENCIATURA EN INGENIERÍA EN MECATRÓNICA 7x2</option>
+                    <option value="LICENCIATURA EN INGENIERÍA EN SISTEMAS - 24B OL - 7x2">LICENCIATURA EN INGENIERÍA EN SISTEMAS - 24B OL - 7x2</option>
+                    <option value="LICENCIATURA EN INGENIERIA INDUSTRIAL">LICENCIATURA EN INGENIERIA INDUSTRIAL</option>
+                    <option value="LICENCIATURA EN INGENIERÍA INDUSTRIAL EN PRODUCCIÓN 7x2">LICENCIATURA EN INGENIERÍA INDUSTRIAL EN PRODUCCIÓN 7x2</option>
+                    <option value="LICENCIATURA EN MERCADOTECNIA">LICENCIATURA EN MERCADOTECNIA</option>
+                    <option value="LICENCIATURA EN MERCADOTECNIA 7x2">LICENCIATURA EN MERCADOTECNIA 7x2</option>
+                    <option value="LICENCIATURA EN NEGOCIOS INTERNACIONALES">LICENCIATURA EN NEGOCIOS INTERNACIONALES</option>
+                    <option value="LICENCIATURA EN NEGOCIOS INTERNACIONALES 7x2">LICENCIATURA EN NEGOCIOS INTERNACIONALES 7x2</option>
+                    <option value="LICENCIATURA EN NUTRICIÓN">LICENCIATURA EN NUTRICIÓN</option>
+                    <option value="LICENCIATURA EN PEDAGOGÍA 7x2">LICENCIATURA EN PEDAGOGÍA 7x2</option>
+                    <option value="LICENCIATURA EN PSICOLOGÍA">LICENCIATURA EN PSICOLOGÍA</option>
+                    <option value="LICENCIATURA EN QUÍMICO FARMACÉUTICO BIÓLOGO">LICENCIATURA EN QUÍMICO FARMACÉUTICO BIÓLOGO</option>
+                    <option value="LICENCIATURA EN TRABAJO SOCIAL">LICENCIATURA EN TRABAJO SOCIAL</option>
+                    <option value="MAESTRÍA EN ADMINISTRACIÓN Y LIDERAZGO 4x1">MAESTRÍA EN ADMINISTRACIÓN Y LIDERAZGO 4x1</option>
+                    <option value="MAESTRÍA EN ALTA DIRECCIÓN">MAESTRÍA EN ALTA DIRECCIÓN</option>
+                    <option value="MAESTRÍA EN DERECHO FISCAL 4x1">MAESTRÍA EN DERECHO FISCAL 4x1</option>
+                    <option value="MAESTRÍA EN DESARROLLO ORGANIZACIONAL">MAESTRÍA EN DESARROLLO ORGANIZACIONAL</option>
+                    <option value="MAESTRIA EN DOCENCIA">MAESTRIA EN DOCENCIA</option>
+                    <option value="MAESTRÍA EN EDUCACIÓN 4x1">MAESTRÍA EN EDUCACIÓN 4x1</option>
+                    <option value="MAESTRÍA EN GESTIÓN AMBIENTAL 4x1">MAESTRÍA EN GESTIÓN AMBIENTAL 4x1</option>
+                    <option value="MAESTRÍA EN PLANEACIÓN FISCAL CORPORATIVA">MAESTRÍA EN PLANEACIÓN FISCAL CORPORATIVA</option>
+                    <option value="MAESTRÍA EN PLANEACIÓN FISCAL CORPORATIVA 4x1">MAESTRÍA EN PLANEACIÓN FISCAL CORPORATIVA 4x1</option>
+                </select>
+            </form>
+        </div>
+    )
+}
+
+export default Carreras

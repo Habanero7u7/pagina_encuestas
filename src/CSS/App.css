@@ -1,0 +1,137 @@
+* {
+  margin: 5px;
+  padding: 0px;
+}
+
+body {
+  color: #ffffff;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #07225c;
+  background-blend-mode: lighten;
+}
+
+#log div {
+  float: left;
+  margin-left: 15px;
+}
+
+h1 {
+  float: right;
+  font-size: 70px;
+  text-align: center;
+  color: orange;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  width: 83%;
+}
+
+#planteles {
+  float: left;
+  width: 30%;
+}
+
+#planteles label {
+  margin-left: 15px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#planteles select {
+  font-size: 30px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  border: 1px solid orange;
+  padding: 4px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#modalidad {
+  float: left;
+  width: 30%;
+}
+
+#modalidad label {
+  margin-left: 15px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#modalidad select {
+  font-size: 30px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  border: 1px solid crimson;
+  padding: 4px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#turno {
+  float: right;
+  width: 20%;
+}
+
+#turno label {
+  margin-left: 15px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#turno select {
+  font-size: 30px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  border: 1px solid cornflowerblue;
+  padding: 4px;
+  border-radius: 9px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#carreras {
+  clear: both;
+}
+
+#carreras label {
+  margin-left: 15px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#carreras select {
+  font-size: 25px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  border: 1px solid darkorchid;
+  padding: 4px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  font-size: 40px;
+  border-radius: 10px;
+  color: #07225c;
+  border: 3px solid orange;
+}
