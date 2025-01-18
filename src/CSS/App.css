@@ -1,137 +1,229 @@
+/* Reinicio de márgenes y paddings */
 * {
-  margin: 5px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: #ffffff;
   margin: auto;
   border-radius: 20px;
-  background-color: #07225c;
-  background-blend-mode: lighten;
+  background-image: url('../Images/fondo.jpg'); /* Reemplaza con la ruta de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  font-family: Arial, sans-serif;
 }
 
-#log div {
-  float: left;
-  margin-left: 15px;
+/* Logo y encabezado */
+header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el título */
+  justify-content: space-between; /* Asegura espacio entre columnas */
+  padding: 20px;
+  gap: 20px; /* Espacio entre elementos */
 }
 
-h1 {
-  float: right;
-  font-size: 70px;
-  text-align: center;
+header img {
+  max-width: 250px; /* Tamaño del logo */
+  height: auto; /* Mantener proporción */
+}
+
+header h1 {
+  font-size: 3rem; /* Tamaño del título */
   color: orange;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
-  width: 83%;
+  margin: 0 auto; /* Asegurar que esté centrado horizontalmente */
+  text-align: center;
+  flex: 1; /* Permite al título ocupar el espacio central */
 }
 
-#planteles {
-  float: left;
-  width: 30%;
+header div:last-child {
+  flex: 1; /* Espaciador para mantener el logo y título correctamente alineados */
 }
 
-#planteles label {
-  margin-left: 15px;
-  font-size: 50px;
+/* Contenedor principal */
+form {
   display: flex;
-  align-items: center;
-  margin-top: 30px;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre elementos */
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-#planteles select {
-  font-size: 30px;
-  font-family: cursive, sans-serif;
-  outline: 0;
-  border: 1px solid orange;
-  padding: 4px;
-  border-radius: 9px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 15px;
+/* Selectores generales */
+select {
+  min-width: 200px;
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  outline: none;
 }
 
-#modalidad {
-  float: left;
-  width: 30%;
+/* Etiquetas */
+label {
+  margin-top: 15px;
+  font-size: 1.5rem;
 }
 
-#modalidad label {
-  margin-left: 15px;
-  font-size: 50px;
+/* Estilos para secciones */
+#planteles, #modalidad, #turno, #carreras {
   display: flex;
-  align-items: center;
-  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-#modalidad select {
-  font-size: 30px;
-  font-family: cursive, sans-serif;
-  outline: 0;
-  border: 1px solid crimson;
-  padding: 4px;
-  border-radius: 9px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-#turno {
-  float: right;
-  width: 20%;
-}
-
-#turno label {
-  margin-left: 15px;
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-}
-
-#turno select {
-  font-size: 30px;
-  font-family: cursive, sans-serif;
-  outline: 0;
-  border: 1px solid cornflowerblue;
-  padding: 4px;
-  border-radius: 9px;
-  margin-bottom: 60px;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-#carreras {
-  clear: both;
-}
-
-#carreras label {
-  margin-left: 15px;
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-}
-
-#carreras select {
-  font-size: 25px;
-  font-family: cursive, sans-serif;
-  outline: 0;
-  border: 1px solid darkorchid;
-  padding: 4px;
-  border-radius: 9px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 60px auto;
-  font-size: 40px;
+/* Botón */
+input[type="submit"] {
+  font-size: 1.5rem;
+  padding: 15px 30px; /* Incrementar tamaño del botón */
   border-radius: 10px;
   color: #07225c;
   border: 3px solid orange;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: block;
+  margin: 60px auto; /* Incrementar espacio superior del botón */
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Media Queries para Responsividad */
+
+/* Teléfonos pequeños */
+@media (max-width: 768px) {
+  body {
+    background-image: url('../Images/fondocel.webp');
+    background-size: cover; /* Ajusta la imagen para que se muestre completa en pantallas pequeñas */
+    background-position: center; /* Centra la parte superior de la imagen */
+    background-attachment: scroll; /* Permite que la imagen se desplace al hacer scroll */
+    min-height: 100vh;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    max-width: 80px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Alineación central de labels y selectores */
+  label {
+    font-size: 1.2rem;
+    text-align: center; /* Centrar texto de los labels */
+    width: 100%; /* Asegurar que ocupen todo el ancho */
+  }
+
+  select {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 0 auto; /* Centrar el cuadro de selección */
+    display: block; /* Asegurar que se comporte como bloque */
+  }
+
+  input[type="submit"] {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+
+  /* Centrar las secciones */
+  #planteles, #modalidad, #turno, #carreras {
+    align-items: center; /* Centrar contenido */
+    text-align: center; /* Centrar texto */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-image: url('../Images/fondotab.jpg');
+    background-size: cover; /* Ajusta la imagen para que se muestre completa en pantallas pequeñas */
+    background-position: top center; /* Centra la parte superior de la imagen */
+    background-attachment: scroll; /* Permite que la imagen se desplace al hacer scroll */
+    min-height: 100vh;
+  }
+
+  header img {
+    max-width: 90px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  select {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Escritorios grandes */
+@media (min-width: 1200px) {
+  body {
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    gap: 20px; /* Espacio entre secciones */
+  }
+
+  #planteles, #modalidad, #turno {
+    display: flex;
+    flex-direction: column; /* Mantiene el label sobre el select */
+    flex: 1 1 30%; /* Cada sección ocupa el 30% del ancho */
+    max-width: 300px; /* Tamaño máximo de cada sección */
+  }
+
+  #planteles {
+    align-items: flex-start; /* Plantel a la izquierda */
+  }
+
+  #modalidad {
+    align-items: center; /* Modalidad centrada */
+  }
+
+  #turno {
+    align-items: flex-end; /* Turno a la derecha */
+  }
+
+  label {
+    font-size: 1.8rem; /* Aumentar tamaño para escritorio */
+    text-align: left; /* Alinear texto de labels a la izquierda */
+  }
+
+  select {
+    font-size: 1.2rem;
+    width: 100%; /* Asegurar que los selects se expandan al ancho del contenedor */
+  }
 }

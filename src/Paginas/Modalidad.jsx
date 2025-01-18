@@ -1,22 +1,47 @@
-import React from 'react'
+import React from 'react';
 
-const Modalidad = () => {
+const Modalidad = ({ datos, setDatos, opcionesFiltradas, setOpcionesFiltradas }) => {
+    const handleChange = (event) => {
+        const modalidadSeleccionada = event.target.value;
+
+        setDatos((prev) => ({
+            ...prev,
+            modalidad: modalidadSeleccionada,
+            carrera: '',
+            turno: '',
+        }));
+
+        const carreras = opcionesFiltradas.carrerasPorModalidad
+            ? opcionesFiltradas.carrerasPorModalidad[modalidadSeleccionada] || []
+            : [];
+
+        setOpcionesFiltradas((prev) => ({
+            ...prev,
+            carreras,
+            turnos: [],
+        }));
+    };
+
     return (
         <div>
             <form action="#" id="modalidad">
-                <label for="lang">Selecciona tu Modalidad</label>
-                <select name="modalidades" id="lang">
-                    <option value="cuatrimestral">Cuatrimestre</option>
-                    <option value="maestria cuatrimestral">Maestria Cuatrimestre</option>
-                    <option value="maestria 4x1">Maestria 4x1</option>
-                    <option value="semestral">Semestre</option>
-                    <option value="maestria semestral">Maestria Semestre</option>
-                    <option value="sep semestral rh">SEP Semestral RH</option>
-                    <option value="trimestral">Trimestre</option>
+                <label htmlFor="modalidad">Selecciona tu Modalidad</label>
+                <select
+                    name="modalidades"
+                    id="modalidad"
+                    onChange={handleChange}
+                    disabled={!opcionesFiltradas.modalidades.length}
+                >
+                    <option value="">Seleccione una modalidad</option>
+                    {opcionesFiltradas.modalidades.map((modalidad, index) => (
+                        <option key={index} value={modalidad}>
+                            {modalidad}
+                        </option>
+                    ))}
                 </select>
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default Modalidad
+export default Modalidad;
